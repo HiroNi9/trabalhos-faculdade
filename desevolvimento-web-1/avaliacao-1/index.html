@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang ="pt-br">
+  <head>
+    <meta content="text/html; charset="utf-8">
+    <title>Forms</title>
+    <link rel="icon" href="Images/iconeforms.png" type ="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+  </head>
+  <body>
+    <h1>Formulário para cadastro</h1>
+    <form>
+    <table align="center">
+        <tr>
+	  <th colspan="4" align="center">Dados Pessoais</th>
+        </tr>
+
+	<tr>
+	  <td align="left">Nome completo: </td>
+	  <td align="left" colspan="3"><input type="text" size="55" name="nome"></td>
+        </tr>
+	<tr>
+	  <td align="left">Data de nascimento:</td>
+	  <td align="left" colspan="3"><input id="data" type="date"></td>
+	</tr>
+
+	<tr>
+	  <td align="left">Sexo:</td>
+	  <td align="left"><input type="radio" name="sexo" value="F" checked> feminino</td>
+	  <td align="left" colspan="2"><input type="radio"name="sexo" value="M" checked> masculino</td>
+        </tr>
+	<tr>
+	  <td align="left">Estado Civil:</td>
+	  <td align="left" colspan="2">
+	    <select name="estadoCivil">
+	    <option value="1">Solteiro(A)</option>
+	    <option value="2">Casado(A)</option>
+	    <option value="3">Separado(A)</option>
+	    <option value="4">Divorciádo(A)</option>
+	    <option value="5">Viúvo(A)</option>
+	  </select></tr>
+    </table>
+    <hr>
+    <table align="center">
+      <th>
+	  <th colspan="2" align="center">Formação</th>	 
+      </th>
+	<tr rowspan="2">
+	  <td align="left">Nivel escolar:</td>
+	  <td align="left" colspan="2">
+	    <select name="nivelEscolar" size="3">
+	    <option value="1"> Ensino Fundamental</option>
+	    <option value="2"> Ensino Médio </option>
+	    <option value="3"> Ensino Médio Técnico </option>
+	    <option value="4"> Ensino Superior </option>
+	    <option value="5"> Pós Graduação </option>
+	    <option value="6"> Mestrado </option>
+	  </select></td>  
+
+	  <td align="left"> 
+	    <input type="radio" name="situacao" value="1" checked> Completo<br> 
+	    <input type="radio" name="situacao" value="2"> Incompleto<br>
+	    <input type="radio" name="situacao" value="3"> Cursando</td>
+	</tr>
+	<tr>
+	  <td align="left">Nome da Instituição:</td>
+	  <td align="left" colspan="3"><input type="text" size="55" name="nomeInst"></td>
+        </tr> 
+    </table>
+    <hr>
+    <table align="center">
+         <th>
+	  <th align="right">Interesse</th>	 
+        </th>
+	<tr>
+	  <td align="left">Áreas de interesse:</td>
+	  <td align="center">
+	    <input type="checkbox" name="automacao" value="a">Automação de Sistemas</td>
+	  <td align="center">
+	    <input type="checkbox" name="bd" value="b">Banco de dados</td>
+	  <td align="center">
+	    <input type="checkbox" name="programacao" value="p">Programação</td>
+	  <td align="center">
+	</tr>
+	<tr rowspan="2">
+	  <td align="left">Experiencia na(s) área(s)</td>
+	  <td align="center" colspan="3">
+	    <select name="nivelExp" size="4">
+	    <option value="1">Menos de 1 ano</option>
+	    <option value="2">Entre 1 e 2 Anos</option>
+	    <option value="3">Mais de 2 anos</option>
+	    <option value="4">Não possuo experiência</option>
+	  </select></td>
+	<tr>
+	  <td align="left"> Observações:</td>
+	  <td aling="center" colspan="3"> 
+	    <textarea name="observacao" rows="5" cols="50" placeholder="Digite aqui"></textarea></td>
+	</tr>
+	<tr>
+	  <td colspan="2" align="center"><input type="submit" value="Enviar"></td>
+	  <td colspan="2" align="center"><input type="reset" value="Limpar"></td>
+	</tr>	
+    </table>
+   </form>
+  </body>
+</html>
